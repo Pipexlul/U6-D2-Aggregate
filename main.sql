@@ -23,6 +23,9 @@ INSERT INTO inscritos (cantidad, fecha, fuente) VALUES ( 24, '01/07/2021', 'Pág
 INSERT INTO inscritos (cantidad, fecha, fuente) VALUES ( 83, '01/08/2021', 'Blog' );
 INSERT INTO inscritos (cantidad, fecha, fuente) VALUES ( 99, '01/08/2021', 'Página' );
 
+-- Bonus: Modify table to add a primary key serial column
+ALTER TABLE inscritos ADD COLUMN id SERIAL PRIMARY KEY;
+
 -- Consulta 1: ¿Cuantos registros hay?
 SELECT COUNT(*) AS total_registros FROM inscritos;
 
